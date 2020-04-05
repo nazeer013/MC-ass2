@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <RelativeLayout
+        android:id="@+id/upperpart"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:background="@drawable/ic_keyboard_arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <ImageView
+
+            android:background="@drawable/circle"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:background="@drawable/ic_person"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:id="@+id/camera"
+                android:background="@drawable/ic_camera_alt_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:text="Upload Cover Picture"
+                android:layout_marginStart="20dp"
+                android:layout_alignTop="@+id/camera"
+                android:layout_toEndOf="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_below="@+id/upperpart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <LinearLayout
+        android:id="@+id/upper"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="@string/Email"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
+    <EditText
+        android:layout_marginStart="10dp"
+        android:hint="@string/username"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
+    
+    </LinearLayout>
+    <EditText
+        android:layout_below:"@+id/upper"
+        android:hint="@string/password"
+        android:layout_width="match-parent"
+        android:layout_height="40pd"/>
+       <EditText
+            android:layout_below:"@+id/upper"
+            android:hint="@string/confirmpassword"
+            android:layout_width="match-parent"
+            android:layout_height="40pd"/>
+        <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/bday"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:hint="month"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"/>
+            <EditText
+                android:layout_marginStart="10dp"
+                android:hint="day"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"/>
+            <EditText
+                android:layout_marginStart="10dp"
+                android:hint="year"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"/>
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
